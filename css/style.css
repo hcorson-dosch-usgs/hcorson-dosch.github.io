@@ -1,71 +1,11 @@
 /* Hayley Corson-Dosch style sheet */
 
-div {
+/* div {
 	display: block;
-}
+} */
 
-.button {
-	-webkit-appearance: button;
-    -webkit-writing-mode: horizontal-tb !important;
-    text-rendering: auto;
-    color: buttontext;
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: center;
-    align-items: flex-start;
-    cursor: default;
-    background-color: buttonface;
-    box-sizing: border-box;
-    margin: 0em;
-    margin-top: 0em;
-    margin-right: 0em;
-    margin-bottom: 0em;
-    margin-left: 0em;
-    font: 400 13.3333px Arial;
-    font-style: normal;
-    font-variant-ligatures: normal;
-    font-variant-caps: normal;
-    font-variant-numeric: normal;
-    font-variant-east-asian: normal;
-    font-weight: 400;
-    font-stretch: normal;
-    font-size: 13.3333px;
-    line-height: normal;
-    font-family: Arial;
-    padding: 1px 6px;
-    padding-top: 1px;
-    padding-right: 6px;
-    padding-bottom: 1px;
-    padding-left: 6px;
-    border-width: 2px;
-    border-top-width: 2px;
-    border-right-width: 2px;
-    border-bottom-width: 2px;
-    border-left-width: 2px;
-    border-style: outset;
-    border-top-style: outset;
-    border-right-style: outset;
-    border-bottom-style: outset;
-    border-left-style: outset;
-    border-color: buttonface;
-    border-top-color: buttonface;
-    border-right-color: buttonface;
-    border-bottom-color: buttonface;
-    border-left-color: buttonface;
-    border-image: initial;
-    border-image-source: initial;
-    border-image-slice: initial;
-    border-image-width: initial;
-    border-image-outset: initial;
-    border-image-repeat: initial;
-}
-
-.hamburger {
-    background-color: #292929 !important;
+.navbar-nav {
+	padding-left: 10px;
 }
 
 .navbar {
@@ -79,7 +19,8 @@ div {
 
 .jumbotron {
 	background-color: #ffffff;
-	padding: 10px 10px 10px 10px;
+	padding: 20px 0px 0px 0px;
+	margin-bottom: 0px;
 }
 
 .jumbotron h2 {
@@ -91,20 +32,78 @@ div {
 .jumbotron p {
 	color: #666666;
 	font-size: 20px;
-	text-align: center
+	text-align: center;
+}
+
+.jumbotron b {
+	color: #666666;
+	font-size: 20px;
+	text-align: left;
+}
+
+.jumbotron a {
+	color: #666666;
+	font-size: 20px;
+	text-align: left;
+}
+
+.photo {
+	text-align: center;
 }
 
 .row {
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 0px;
+	padding-top: 20px;
 	padding-right: 20px;
-	padding-bottom: 0px;
+	padding-bottom: 20px;
 	padding-left: 20px;
+}
+
+.column {
+    /* flex: 25%;
+    max-width: 25%; */
+		padding-top: 20px;
+		padding-right: 20px;
+		padding-bottom: 20px;
+		padding-left: 20px;
+}
+
+.horiz-thumbnail {
+	padding-top: 20px;
+	padding-right: 0px;
+	padding-bottom: 30px;
+	padding-left: 0px;
+}
+
+.vert-thumbnail {
+	padding-top: 20px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+
+.info-graphic {
+	padding-top: 20px;
+	padding-right: 0px;
+	padding-bottom: 20px;
+	padding-left: 0px;
 }
 
 .indexText {
 	text-align: justify;
 	font-style: normal;
 	font-family: sans-serif;
+}
+
+.footer-text {
+	padding-top: 20px;
+	padding-right: 0px;
+	padding-bottom: 20px;
+	padding-left: 0px;
+	font-size: 5em;
+}
+
+.img_test {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.1);
 }

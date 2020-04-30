@@ -11,10 +11,19 @@
 .navbar {
 	padding-left: 0%;
 	padding-top: 0px;
+	padding: .2rem .2rem;
 }
 
 .nabbar-toggle {
 	background-color: white;
+}
+
+.navbar-toggler {
+	border: none;
+}
+
+.nav-link {
+	line-height: 14px;
 }
 
 .jumbotron {

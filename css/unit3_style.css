@@ -57,7 +57,8 @@
 
 .chart {
   float: right;
-  margin: 15px 25px 0 0; // was 390 20 0 0
+  margin: 15px 25px 0 0; // was 390 20 0 0;
+  position: absolute;
 }
 
 .chartTitle {

@@ -63,12 +63,24 @@
   .jumbotron p {font-size: 0.948em;}
 }
 
+.jumbotron h5 {
+	color: #303030;
+	font-size: 1em;
+	text-align: center;
+	font-style: italic;
+	font-weight: 200;
+}
+@media screen and (max-width: 600px) {
+  .jumbotron h5 {font-size: 0.8em;}
+}
+
 .jumbotron h3 {
 	color: #303030;
 	font-size: 0.22em;
 	text-align: left;
 	font-weight: 200;
 }
+
 
 .jumbotron a {
 	color: #303030;

@@ -63,7 +63,7 @@ function createSidePanel(){
 
     // Add sources
     var sources_text = '<h6 id = "Sources">'
-    sources_text += '<br><br><b>Sources:</b>'
+    sources_text += '<br><b>Sources:</b>'
     sources_text += '<br>MTA: <a target="_blank" href = "http://web.mta.info/nyct/facts/ridership/ridership_sub.htm"><i>2013 - 2018 average weekday ridership</i></a>'
     sources_text += '<br>City of New York: <a target="_blank" href = "https://data.cityofnewyork.us/Transportation/Subway-Stations/arq3-7z49"><i>Subway station locations</i></a>'
     sources_text += '<br>MTA, Benjamin Gordon 2019: <a target="_blank" href = "https://www.arcgis.com/apps/webappviewer/index.html?id=1ff83a326c4b4f029a766392bf9e1943&extent=-8245998.9269%2C4976190.0524%2C-8209309.1534%2C4994210.0818%2C102100"><i>2011 - 2012 average weekday ridership</i></a>'

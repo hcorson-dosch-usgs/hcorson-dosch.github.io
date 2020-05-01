@@ -2,7 +2,7 @@
 
 #mapid {
   height: 600px;
-  width: 80%;
+  width: 75%;
   display: inline-block
 }
 
@@ -11,7 +11,7 @@
 }
 
 #panel {
-  width: 18%;
+  width: 20%;
   padding: 10px;
   display: inline-block;
   vertical-align: top;

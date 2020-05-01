@@ -64,6 +64,11 @@
 	border-radius: 5px;
 }
 
+.mapboxgl-canvas {
+	left: 0;
+}
+
+
 .row {
 	display: flex;
 	flex-wrap: wrap;

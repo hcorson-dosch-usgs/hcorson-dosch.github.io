@@ -37,38 +37,44 @@
 
 .jumbotron h1 {
 	color: #1c1c1c;
-	font-size: 2.5em;
+	font-size: 2.8em;
 	text-align: center;
 	font-weight: 200;
+}
+@media screen and (max-width: 600px) {
+  .jumbotron h1 {font-size: 1.8em;}
 }
 
 .jumbotron h2 {
 	color: #1c1c1c;
-	font-size: 30px;
+	font-size: 2.3em;
 	text-align: center;
-	font-weight: 400;
+	font-weight: 200;
 }
 
 .jumbotron p {
 	color: #666666;
-	font-size: 18px;
+	font-size: 1.47em;
 	text-align: center;
 	font-weight: 200;
 	/* font-style: ExtraLight; */
 }
+@media screen and (max-width: 600px) {
+  .jumbotron p {font-size: 0.948em;}
+}
 
 .jumbotron h3 {
-	color: #666666;
-	font-size: 20px;
+	color: #303030;
+	font-size: 0.22em;
 	text-align: left;
-	font-weight: 400;
+	font-weight: 200;
 }
 
 .jumbotron a {
-	color: #666666;
-	font-size: 18px;
+	color: #303030;
+	font-size: 0.75em;
 	text-align: left;
-	font-weight: 200;
+	font-weight: 400;
 }
 
 .photo {

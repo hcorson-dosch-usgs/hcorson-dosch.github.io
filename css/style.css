@@ -60,6 +60,10 @@
 	text-align: center;
 }
 
+.hayley_photo {
+	border-radius: 5px;
+}
+
 .row {
 	display: flex;
 	flex-wrap: wrap;
@@ -103,6 +107,10 @@
 	text-align: justify;
 	font-style: normal;
 	font-family: sans-serif;
+}
+
+.indexText a {
+	color: #666666;
 }
 
 .footer-text {

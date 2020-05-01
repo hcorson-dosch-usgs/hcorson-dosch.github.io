@@ -1,0 +1,99 @@
+/* Stylesheet by Hayley Corson-Dosch */
+
+#mapid {
+  height: 600px;
+  width: 80%;
+  display: inline-block
+}
+
+.leaflet-popup-content p {
+    margin: 0.2em 0;
+}
+
+#panel {
+  width: 18%;
+  padding: 10px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  line-height: 30px;
+}
+
+#Guidance {
+  font-family: Arial;
+  text-align: left;
+  line-height: 15px;
+  font-size: 10px;
+}
+
+
+#Sources {
+  font-family: Arial;
+  text-align: left;
+  line-height: 15px;
+  font-size: 10px;
+}
+
+h2 {
+  font-family: Arial;
+  text-align: center;
+}
+
+h5 {
+  font-family: Arial;
+  text-align: left;
+  line-height: 20px;
+}
+
+h6 {
+  font-family: Arial;
+  text-align: left;
+}
+
+.legend-control-container {
+  background-color: rgba(255,255,255,0.8);
+  width: 210px;
+  height: 80px;
+  padding: 10px;
+  text-align: center;
+  border: solid gray 1px;
+  overflow: auto;
+  border-radius: 5px;
+}
+
+#temporal-legend {
+  height: 20px;
+}
+
+.sequence-control-container {
+  width: 280px;
+  height: 20px;
+  background-color: rgba(255,255,255,0.8);
+  padding: 8px;
+  text-align: center;
+  border: solid gray 1px;
+  border-radius: 5px;
+  vertical-align: top;
+}
+
+.range-slider {
+  width: 200px;
+}
+
+.step {
+  width: 36px;
+  background-color: rgba(255,255,255,0.2);
+  border: none;
+}
+
+.step img {
+  width: 24px;
+}
+
+#forward {
+  float: right;
+}
+
+#reverse {
+  float: left;
+}

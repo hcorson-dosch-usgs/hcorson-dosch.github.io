@@ -108,11 +108,6 @@
 	color: #000000;
 }
 
-.mapboxgl-canvas {
-	left: 0;
-}
-
-
 .row {
 	display: flex;
 	flex-wrap: wrap;
@@ -173,4 +168,19 @@
 
 .img_test {
     box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.1);
+}
+
+.container-resume {
+	text-align: center;
+}
+
+.resume {
+	width:70vw;
+	height: 181vh;
+}
+@media screen and (max-width: 600px) {
+  .resume {
+		width:100vw;
+		height: 85vh;
+	}
 }

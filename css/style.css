@@ -175,12 +175,12 @@
 }
 
 .resume {
-	width:70vw;
-	height: 181vh;
+	height: 130vh;
+	width: 50%
 }
 @media screen and (max-width: 600px) {
   .resume {
-		width:90vw;
-		height: 100vh;
+		width: 95%;
+		height: 68vh;
 	}
 }

@@ -10,7 +10,7 @@
   var expressed = attrArray[0];
 
   // chart frame dimensions
-  var chartWidth = window.innerWidth * 0.54, // was 0.425 then 0.525
+  var chartWidth = window.innerWidth * 0.525, // was 0.425 then 0.525
       chartHeight = 340,
       leftPadding = 28,
       rightPadding = 2,
@@ -26,10 +26,15 @@
     // define range of input values
     .domain([0, 100]);
 
+  // define yAxis generator
+  var yAxis = d3.axisLeft()
+    .scale(yScale);
+
   // begin script when window loads
   window.onload = setMap();
 
   // *************************************************** //
+
   // set up choropleth map
   function setMap(){
     // MAP, PROJECTION, PATH, and QUEUE BLOCKS
@@ -110,7 +115,7 @@
       createParallelChart(csvData);
 
       // add in metadata
-      addMetadata()
+      addMetadata();
 
     };
   }; //end of setMap()
@@ -283,6 +288,24 @@
       .attr("height", chartInnerHeight)
       .attr("transform", translate);
 
+    // find max value of data array
+    // build array of all values of the expressed attribute
+    var domainArrayY = [];
+      for (var i=0; i<csvData.length; i++){
+        var val = parseFloat(csvData[i][expressed]);
+        domainArrayY.push(val);
+      };
+
+    // print array
+    console.log(domainArrayY)
+
+    // comput max value of array
+    dataMax = Math.round(Math.max(...domainArrayY));
+    console.log(dataMax);
+
+    // reset yscale domain based on max value
+    yScale.domain([0,dataMax]);
+
     // set bars for each province
     var bars = chart.selectAll(".bar") // make an empty selection
       // bind data to elements
@@ -326,9 +349,7 @@
       .attr("class", "chartTitle");
 
     // Create vertical axis generator
-    var yAxis = d3.axisLeft()
-      .scale(yScale);
-      // .ticks(chartInnerHeight/40, "%"); // attempt to add percent sign to tick mark labels
+    yAxis.scale(yScale);
 
     // Place axis
     var axis = chart.append("g")
@@ -344,7 +365,7 @@
       .attr("transform", translate);
 
     // set bar positions, heights, and colors
-    updateChart(bars, csvData.length, colorScale);
+    updateChart(bars, csvData.length, colorScale, csvData, yScale);
 
   };
 
@@ -431,13 +452,41 @@
 
     // re-set bar positions, heights, and colors
     // note that transition is passed with the bars selection
-    updateChart(bars, csvData.length, colorScale);
+    updateChart(bars, csvData.length, colorScale, csvData, yScale);
 
   };
 
   // *************************************************** //
   // function to position, size, and color bars in chart
-  function updateChart(bars, n, colorScale) {
+  function updateChart(bars, n, colorScale, data, yScale) {
+    // build array of all values of the expressed attribute
+    var domainArrayY = [];
+      for (var i=0; i<data.length; i++){
+        var val = parseFloat(data[i][expressed]);
+        domainArrayY.push(val);
+      };
+
+    // print array
+    console.log(domainArrayY)
+
+    // get max value in array
+    dataMax = Math.round(Math.max(...domainArrayY));
+    console.log(dataMax);
+
+    // reset y scale based on max value
+    if (dataMax > 98) {
+      yScale.domain([0,dataMax+1]);
+    } else {
+      yScale.domain([0,dataMax]);
+    }
+
+    // redefine scale of y axis
+    yAxis.scale(yScale);
+
+    // re-append axis to chart
+    var dropdown = d3.select("g")
+      .call(yAxis);
+
     // set/reset x position based on number of rows in csv
     bars.attr("x", function(d, i){
           return i * (chartInnerWidth / n) + leftPadding;
@@ -446,6 +495,7 @@
         .attr("height", function(d, i){
           return 270 - yScale(parseFloat(d[expressed]));
         })
+
         // set/reset y position of each bar
         .attr("y", function(d, i){
           return yScale(parseFloat(d[expressed])) + topBottomPadding;
@@ -734,7 +784,7 @@
       .append("div")
       .attr("x", 30)
       .attr("height", 30)
-      .attr("width", chartWidth + 15)
+      .attr("width", chartWidth - 25)
       .attr("height", 30)
       .attr("class", "metadataBox")
       .append("html")

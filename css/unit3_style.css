@@ -57,7 +57,8 @@
 
 .chart {
   float: right;
-  margin: 15px 25px 0 0; // was 390 20 0 0;
+  margin-left: 30px;
+  margin-top: 10px;
   position: absolute;
 }
 
@@ -101,7 +102,7 @@
   left: 400px; /* was 420 with map border*/
   z-index: 10;
   font-family: sans-serif;
-  font-size: 0.9em;
+  font-size: 0.8em;
   font-weight: bold;
   color: #bd0d0d;
   padding: 2px;
@@ -158,7 +159,7 @@ option {
 
 .parallelChart {
   float: right;
-  margin: 330px 20px 0 25px;
+  margin: 325px 20px 0 0px;
   position: absolute;
 }
 
@@ -177,29 +178,13 @@ option {
   margin: 5px 0 3px 0;
 }
 
-.metadata {
-  float: right;
-  margin: 650px 20px 0 25px;
-  border: medium solid #5A5A5A;
-  border-width: 0.5px;
-  position: absolute;
-}
-
-.metadataText {
-  /* position: absolute;
-  margin: 650px 20px 0 25px; */
-  font-family: sans-serif;
-  font-size: 0.5em;
-  color: #999
-  fill: #525252;
-}
-
 #Sources {
   position: absolute;
   /* float: right; */
-  left: 630px;
-  top: 660px;
+  left: 655px;
+  top: 650px;
   height: 30px;
+  width: 50%;
   font-family: Arial;
   text-align: left;
   line-height: 11px;

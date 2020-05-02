@@ -176,11 +176,11 @@
 
 .resume {
 	height: 130vh;
-	width: 50%
+	width: 70%
 }
 @media screen and (max-width: 600px) {
   .resume {
-		width: 95%;
+		width: 85%;
 		height: 68vh;
 	}
 }

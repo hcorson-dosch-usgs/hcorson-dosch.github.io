@@ -181,6 +181,6 @@
 @media screen and (max-width: 600px) {
   .resume {
 		width:90vw;
-		height: 85vh;
+		height: 100vh;
 	}
 }

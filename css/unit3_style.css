@@ -181,10 +181,10 @@ option {
 #Sources {
   position: absolute;
   /* float: right; */
-  left: 655px;
+  /* left: 655px; */
   top: 650px;
   height: 30px;
-  width: 50%;
+  width: 70%;
   font-family: Arial;
   text-align: left;
   line-height: 11px;

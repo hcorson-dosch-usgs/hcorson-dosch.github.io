@@ -11,7 +11,7 @@
 
   // chart frame dimensions
   var chartWidth = window.innerWidth * 0.525, // was 0.425 then 0.525
-      chartHeight = 340,
+      chartHeight = 310,
       leftPadding = 28,
       rightPadding = 2,
       topBottomPadding = 35,
@@ -40,7 +40,7 @@
     // MAP, PROJECTION, PATH, and QUEUE BLOCKS
     // map frame dimensions
     var width = window.innerWidth * 0.385, // was 0.5
-        height = 620;
+        height = 600;
 
     // create new svg container for the map
     var map = d3.select("body")

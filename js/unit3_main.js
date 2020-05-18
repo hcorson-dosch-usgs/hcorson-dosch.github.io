@@ -642,7 +642,7 @@
     // append the svg object to the body of the page
     var pChart = d3.select("body")
       .append("svg")
-        .attr("width", chartWidth + 30)
+        .attr("width", chartWidth + 40)
         .attr("height", chartHeight)
         .attr("class", "parallelChart")
       .append("g")
@@ -664,7 +664,7 @@
 
     // build the X scale and find the best position for each y axis
     xPC = d3.scalePoint()
-      .range([0, chartInnerWidth + 30])
+      .range([0, chartInnerWidth + 40])
       .padding(0.35)
       .domain(dimensions);
 

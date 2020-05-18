@@ -664,7 +664,7 @@
 
     // build the X scale and find the best position for each y axis
     xPC = d3.scalePoint()
-      .range([0, chartInnerWidth + 15])
+      .range([0, chartInnerWidth + 30])
       .padding(0.35)
       .domain(dimensions);
 

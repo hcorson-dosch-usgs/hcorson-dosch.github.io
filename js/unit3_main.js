@@ -642,7 +642,7 @@
     // append the svg object to the body of the page
     var pChart = d3.select("body")
       .append("svg")
-        .attr("width", chartWidth + 15)
+        .attr("width", chartWidth + 30)
         .attr("height", chartHeight)
         .attr("class", "parallelChart")
       .append("g")

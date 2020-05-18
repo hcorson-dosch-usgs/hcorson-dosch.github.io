@@ -40,7 +40,7 @@
     // MAP, PROJECTION, PATH, and QUEUE BLOCKS
     // map frame dimensions
     var width = window.innerWidth * 0.385, // was 0.5
-        height = 680;
+        height = 620;
 
     // create new svg container for the map
     var map = d3.select("body")
@@ -774,7 +774,7 @@
     // write text
     // Add sources
     var sources_text = '<h6 id = "Sources">'
-    sources_text += '<br><br><b>Data source:</b>'
+    sources_text += '<b>Data source:</b>'
     sources_text += '<br>USGS: <a target="_blank" href = "https://waterdata.usgs.gov/ca/nwis/water_use/">Water Use Data for California</a>'
     sources_text += '<br><i>Note: Percentages for each county were calculated from the total water use for each county. Data were not available for the following uses: commercial, hydroelectric power, and wastewater treatment.</i></a>'
     sources_text += '</h6>'

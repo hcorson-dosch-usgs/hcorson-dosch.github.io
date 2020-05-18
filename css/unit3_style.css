@@ -98,7 +98,7 @@
   width: 13.2%;
   position: absolute;
   text-align: left;
-  top: 130px; /* was 70 with map border*/
+  top: 100px; /* was 70 with map border*/
   left: 320px; /* was 420 with map border*/
   z-index: 10;
   font-family: sans-serif;
@@ -179,12 +179,10 @@ option {
 }
 
 #Sources {
-  position: absolute;
-  /* float: right; */
-  /* left: 655px; */
-  top: 650px;
+  float: left;
   height: 30px;
   width: 70%;
+  margin-top: 0px;
   font-family: Arial;
   text-align: left;
   line-height: 11px;

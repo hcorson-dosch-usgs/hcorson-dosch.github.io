@@ -166,7 +166,7 @@ option {
 .axisPC {
   opacity: 0.6;
   font-family: sans-serif;
-  font-size: 0.6em;
+  font-size: 0.6vw;
 }
 
 .axisPC:hover {

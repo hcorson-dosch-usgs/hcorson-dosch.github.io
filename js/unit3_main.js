@@ -54,7 +54,7 @@
       .center([0, 37.31667])
       .rotate([119.09, 0, 0])
       .parallels([35.66, 38.83])
-      .scale(3500)
+      .scale(3400)
       .translate([width / 2, height / 2]);
 
     var path = d3.geoPath()

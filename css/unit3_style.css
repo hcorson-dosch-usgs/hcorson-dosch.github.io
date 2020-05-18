@@ -98,7 +98,7 @@
   width: 13.2%;
   position: absolute;
   text-align: left;
-  top: 80px; /* was 70 with map border*/
+  top: 130px; /* was 70 with map border*/
   left: 360px; /* was 420 with map border*/
   z-index: 10;
   font-family: sans-serif;
